@@ -26,7 +26,7 @@
 <h3><b>2. Embedding Layer</b></h3>
 <p>BERT generates three embeddings for each token:</p>
 
-<ol>Token Embeddings → Represents each token.</ol>ol>
+<ol>Token Embeddings → Represents each token.</ol>
 <ol>Segment Embeddings → Differentiates sentence pairs (if applicable).</ol>
 <ol>Position Embeddings → Adds positional context, as Transformers do not have a built-in order mechanism.</ol>
 <p>These embeddings are added together and passed to the Transformer layers.</p>
@@ -51,7 +51,8 @@
 <p>P(spam)=0.85,P(not spam)=0.15</p>
 <p>For multi-class classification (e.g., topic classification with 3+ categories), softmax assigns probabilities across multiple labels.</p>
 
-<h3><b>6. Fine-Tuning with a Loss Function</b><h3>
+<h3><b>6. Fine-Tuning with a Loss Function</b></h3>
+  
 <p>During training, BERT uses cross-entropy loss to minimize classification errors. The model learns by adjusting weights using backpropagation and gradient descent.</p>
 
 
@@ -67,7 +68,7 @@
 <h2><b>Tensorhub Model:</b></h2>
 -"https://tfhub.dev/tensorflow/bert_en_uncased_L-12_H-768_A-12/2"
 
-<h2><b>Data fields</b></h2>h2>
+<h2><b>Data fields</b></h2>
 <ol>qid - unique question identifier</ol>
 <ol>question_text - Quora question text</ol>
 <ol>target - a question labeled "insincere" has a value of 1, otherwise 0</ol>
